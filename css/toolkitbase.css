@@ -1,0 +1,234 @@
+@charset "utf-8";
+html, body {
+	color: #222;
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	background: #fff;
+	/*overflow: hidden;*/
+	overflow:auto;
+	font-size: 14px;
+	line-height: 1.6em;
+	/*font-family: "Font Awesome 5 Free";*/
+	--ouyangxun: 'OuyangXun', 'Microsoft Yahei', sans-serif;
+    --lishu: 'LiSu', 'STLiti', 'Microsoft Yahei', sans-serif;
+}
+
+.ouyangxun{
+    font-family: var(--ouyangxun);
+}
+
+.lishu{
+    font-family: var(--lishu);
+}
+
+@font-face {
+    font-family: OuyangXun;
+    src: url(../font/chinese/欧阳询书法字体.ttf);
+}
+
+.keep-newline{
+	white-space: pre-wrap !important;
+}
+
+.flex-center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.float-left{
+	float: left;
+}
+
+.float-right{
+	float: right;
+}
+
+.float-clear-left{
+	clear: left;
+}
+
+.float-clear-right{
+	clear: right;
+}
+
+.float-clear-both{
+	clear: both;
+}
+
+/*---------------- sandbox navbar        --------------*/
+.navbar{
+	background-color: #f7fafc;
+}
+
+.nav-item{
+	padding: 0 0.5rem;
+}
+
+.nav-link{
+	font-size: 15px;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+	color: rgb(8, 60, 119);
+}
+
+/*---------------- sandbox footer banner --------------*/
+.footer-copyright-sandbox{
+	background-color: rgb(3, 58, 123);
+	margin-top: 15em;
+	padding: 1.5rem 0;
+}
+
+.footer-copyright-container-sandbox{
+	display: flex;
+	justify-content: center;
+	align-items: start;
+	color: whitesmoke;
+	font-size: 1.1rem;
+}
+
+.footer-image{
+	height: 3.4rem;
+}
+
+@media only screen and (max-width: 770px){
+	.footer-image{
+		display: none;
+	}
+}
+
+.copyright-icon{
+    margin-right: 1rem;
+}
+
+.copyright-text{
+    margin-bottom: 0.05rem;
+    color: whitesmoke;
+}
+
+.copyright-text a{
+    font-size: 1.1rem;
+    color:whitesmoke;
+}
+
+.copyright-text a:hover{
+    text-decoration: underline;
+}
+
+/*---------------- page headline --------------*/
+.content-min-height{
+	min-height: 700px;
+}
+
+.page-container-fluid{
+	padding-top: 8rem;
+}
+
+.page-headline {
+    font-size: 2rem;
+    color: rgb(8,60,119);
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 5rem;
+	line-height: 40px;
+}
+
+.page-headline-2 {
+    font-size: 1.5rem;
+    color: #222;
+    /*text-align: center !important;*/
+    font-weight: 400;
+    margin-bottom: 4rem;
+}
+
+.page-content {
+	text-align:center;
+	font-size:1.5rem;
+	color:#2C2C2C;
+	margin: 3rem;
+	line-height: 1.3em;
+}
+
+/*---------------- case card --------------*/
+.card-footer-case{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.badge-case-tag{
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+    background-color: rgba(0, 90, 202, 10%);
+    color: rgba(0, 90, 202, 100%);
+	text-transform: capitalize;
+	margin: 0.1rem 0.1rem 0.5rem 0;
+	padding: 0.35em 0.6em;
+}
+
+.badge-case-tag:hover{
+    background-color: rgba(0, 90, 202, 20%);
+    color: rgba(0, 90, 202, 100%);
+}
+
+.badge-topic-tag{
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+    background-color: #0954A3;
+    color: white;
+    margin-bottom: 0.5rem;
+	text-transform: capitalize;
+	padding: 0.35em 0.6em;
+}
+
+.badge-topic-tag:hover{
+    background-color: #0954A3;
+	text-decoration: underline;
+}
+
+.fa-12px{
+	font-size: 12px;
+}
+
+/*---------------- cases page list --------------*/
+
+.list-group-item.active {
+	z-index: 2;
+	color: #fff;
+	background-color: rgb(3, 58, 123); 
+	border-color: rgb(3, 58, 123);
+}
+
+.loose-text{
+	letter-spacing: 0.06em;
+	font-weight: 600;
+}
+
+.capitalize-text{
+	text-transform: capitalize;
+}
+
+.box-shadow-light{
+	box-shadow: 0 2px 8px 0 rgba(0,0,0,.08);
+}
+
+.case-img-container{
+	overflow: hidden;
+}
+
+.case-img-hover-scale{
+	transition-duration: 0.5s;
+	width: auto;
+	height: auto;
+	max-width: 250px;
+	max-height: 200px;
+}
+
+.case-img-hover-scale:hover{
+	transform: scale(1.2);
+	transition-duration: 0.5s;
+}
