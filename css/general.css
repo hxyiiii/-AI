@@ -1,0 +1,93 @@
+@charset "utf-8";
+body {
+	color: #222;
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	background: #fff;
+	/*overflow: hidden;*/
+	overflow:auto;
+	font-size: 14px;
+	line-height: 1.6em;
+	/*font-family: "Font Awesome 5 Free";*/
+	--ouyangxun: 'OuyangXun', 'Microsoft Yahei', sans-serif;
+    --lishu: 'LiSu', 'STLiti', 'Microsoft Yahei', sans-serif;
+}
+.navbar {
+	overflow:hidden;
+	background-color: #f7fafc;
+}
+.navbar a {
+	float: left;
+	display: block;
+	color: rgba(123, 118, 118, 0.791);
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}   
+.navbar a:hover {
+	background-color: #dddddd08;
+	color: rgb(8, 60, 119);
+}
+.container {
+	width: 100%;
+} 
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}   
+@media screen and (max-width: 600px) {
+	.container {
+	  width: 100%;
+	}
+}
+.footer {
+	background-color: #f1f1f1;
+	padding: 10px;
+	text-align: center;
+}
+ 
+.page-headline {
+    font-size: 2rem;
+    color: rgb(8,60,119);
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 5rem;
+	line-height: 40px;
+}
+
+/* 搜索框容器样式 */
+.search-container {
+	width: 500px; /* 搜索框宽度 */
+	margin: 0 auto; /* 左右居中 */
+	text-align: center; /* 输入框和按钮居中 */
+	/* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  */
+  }
+  
+  /* 搜索框输入框样式 */
+  .search-container input[type=text] {
+	width: 100%;
+	padding: 10px;
+	font-size: 16px;
+	border: 0.1px solid rgb(112, 136, 163);
+	border-radius: 20px;
+	box-sizing: border-box; 
+  }
+  
+  /* 搜索按钮样式 */
+  .search-container button {
+	padding: 10px;
+	background-color: #007bff; /* 按钮背景色 */
+	color: white; /* 按钮文字颜色 */
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+  }
+  
+  /* 鼠标悬停时搜索按钮样式 */
+  .search-container button:hover {
+	background-color: #0056b3; /* 鼠标悬停时的按钮背景色 */
+  }
+  
+ 
