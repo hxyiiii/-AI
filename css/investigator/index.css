@@ -1,0 +1,185 @@
+.container-fluid-hero {
+    background-color: var(--theme-color-purple-light-xxx);
+}
+
+.hero {
+    padding: 5rem 0 8rem;
+}
+
+.hero-right {
+    text-align: center;
+}
+
+.heading-1-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homepage-logo-img {
+    margin-right: 2rem;
+    max-width: 4.4rem;
+}
+
+@media screen and (max-width: 576px) {
+    .heading-1-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .homepage-logo-img {
+        margin-bottom: 2rem;
+        margin-right: 0;
+        max-width: 4.4rem;
+    }
+    .heading-1-cn {
+        font-size: 4.5rem;
+    }
+    .heading-1-en {
+        font-size: 2.8rem;
+    }
+}
+
+
+/*cases cards part*/
+
+a.case-card-link:hover {
+    text-decoration: none;
+}
+
+.case-card {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    transition: 0.2s;
+    border-top: 3px solid var(--theme-color-steel-dark);
+    border-radius: 0;
+}
+
+.case-card:hover {
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+    transition: 0.2s;
+}
+
+.case-card-footer {
+    /*background-color: var(--theme-color-purple-light-xxx);*/
+    background-color: white;
+    color: rgba(62, 164, 218, 1);
+}
+
+.case_source {}
+
+.type-option {}
+
+.case_type_name {
+    color: var(--font-color-gray-standard);
+    font-weight: 600;
+}
+
+.case_title_text a,
+a .case_title_text {
+    color: var(--theme-color-steel-dark);
+    text-decoration: none;
+    line-height: 27px;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.case_title_text a,
+a .case_title_text:hover {
+    color: var(--theme-color-steel-standard);
+    text-decoration: none;
+}
+
+.case_introduction_part {
+    color: white;
+}
+
+a.badge {
+    text-decoration: none;
+}
+
+a.badge:hover {
+    color: white;
+}
+
+
+/*form_test part*/
+
+.form-test-col {
+    /*background-color: aliceblue;*/
+}
+
+.form-test-box-card {
+    background-color: var(--theme-color-purple-light-xxx);
+}
+
+.visually-hidden {
+    visibility: hidden;
+}
+
+#customFile .custom-file-input:lang(en)::after {
+    content: "Select file...";
+}
+
+#customFile .custom-file-input:lang(en)::before {
+    content: "Click me";
+}
+
+
+/*when a value is selected, this class removes the content */
+
+.custom-file-input.selected:lang(en)::after {
+    content: "" !important;
+}
+
+.custom-file {
+    overflow: hidden;
+}
+
+.custom-file-input {
+    white-space: nowrap;
+}
+
+.rating {
+    display: inline-block;
+    width: 100%;
+    /*margin-top: 40px;*/
+    /*padding-top: 40px;*/
+    text-align: center;
+}
+
+.like,
+.unlike {
+    display: inline-block;
+    cursor: pointer;
+    /*margin: 0 10px;*/
+    color: gray;
+}
+
+
+/*.dislike:hover,
+.like:hover {
+  color: rgb(8,60,119);
+}*/
+
+
+/*.active {*/
+
+
+/*  color: #2EBDD1;*/
+
+
+/*}*/
+
+.like.active,
+.like-color {
+    /*color: cornflowerblue;*/
+    /*color: var(--theme-color-green-standard);*/
+    color: var(--theme-color-steel-standard);
+}
+
+.unlike.active,
+.unlike-color {
+    color: rgb(8, 60, 119);
+    /*color: var(--theme-color-steel-standard);*/
+}

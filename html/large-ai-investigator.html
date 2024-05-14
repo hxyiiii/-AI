@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DJVXNTK2X7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'G-DJVXNTK2X7');
+    </script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+
+
+
+    <link rel="stylesheet" , type="text/css" href="../css/investigator/sandbox-poll.css">
+    <link rel="stylesheet" , type="text/css" href="../css/investigator/index.css">
+
+    <title>首页 | 智善 · 观行</title>
+    <link rel="icon" href="../image/logo/%E9%98%B4%E5%88%BB%E9%9A%B6%E4%B9%A6%E7%89%88/%E6%99%BA%E5%96%84%E8%A7%82%E8%A1%8C2.png" type="img/x-ico">
+    <script src="../javascript/jquery-3.5.1.js"></script>
+    <!-- our project just needs Font Awesome Solid + Brands -->
+    <link href="../css/fontawesome/fontawesome.min.css" rel="stylesheet">
+    <link href="../css/fontawesome/brands.min.css" rel="stylesheet">
+    <link href="../css/fontawesome/solid.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">智识AI风险评测系统</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/large-ai-investigator">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/large-ai-investigator/cases">案例库</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/large-ai-investigator/about">关于</a>
+                </li>
+
+                <!---->
+                <!--                  <li class="nav-item"><a class="nav-link ml-3 text-nowrap" href="/login">Log in</a></li>-->
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/large-ai-investigator/en">我的</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="content-min-height">
+
+
+        <div class="container-fluid container-fluid-hero">
+            <div class="container">
+                <div class="row hero">
+                    <div class="col-md-1">
+
+
+
+                    </div>
+                    <div class="col-md-10">
+                        <div class="hero-right">
+                            <div class="heading-1-container">
+                                <img src="static/image/logo/%E9%98%B4%E5%88%BB%E9%9A%B6%E4%B9%A6%E7%89%88/%E6%99%BA%E5%96%84%E8%A7%82%E8%A1%8C2.png" class="homepage-logo-img" alt="智善观行">
+
+                                <div class="heading-1-cn"><span class="ouyangxun">智 识 </span> &middot; <span class="ouyangxun">A I</span></div>
+
+                            </div>
+
+
+                            <div class="heading-2-cn mt-5">人工智能大模型伦理安全观测站</div>
+
+                            <div class="heading-3 mt-5">取自“察言观行”，即通过公众反馈与察言观行来评估现有人工智能大模型表现出的“道德品行”，从而为进一步改善相关人工智能大模型提供参考依据。人工智能大模型实现智能向善需要大家的参与，通过公众的“察言观行”为人工智能大模型伦理安全的提升与发展建言献策。</div>
+                            <hr class="my-4">
+                            <a class="btn mt-2 button-navy white-space-no-wrap" href="/large-ai-investigator/cases" role="button">案例库</a></a>
+                            <a class="btn mt-2 button-navy white-space-no-wrap" href="#col_form_test" role="button">提交案例</a>
+                            <a class="btn mt-2 button-navy white-space-no-wrap" href="/large-ai-investigator/en" role="button">English</a>
+                        </div>
+                    </div>
+                    <div class="col"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-fluid" id="sandbox-instruction">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8" id="col_recent_cases">
+                        <!--case cards-->
+                        <div class="row row-cols-1 row-cols-md-1 g-4 gridCards">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 form-test-col pb-5" id="col_form_test">
+                        <div class="heading-line">提交人工智能大模型测试反馈</div>
+                        <div class="case-card p-4 form-test-box-card">
+                            <!-- <div class="text-box"> -->
+                            <!--     <p>欢迎为国防人工智能与军备控制网络推荐数据源与报告。</p> -->
+                            <!-- </div> -->
+                            <form class="text-box" action="/ai-microscope/submit" method="post" id="form_test" enctype="multipart/form-data">
+                                <div class="mb-3">
+                                    <label for="username" class="form-label">提供者</label>
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" id="username" aria-describedby="username" name="username" maxlength="45">
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">提供者电子邮箱</label>
+                                    <div class="input-group mb-3">
+                                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email" maxlength="45">
+                                    </div>
+                                    <small id="emailHelp" class="form-text text-muted">以上为非必填项，信息用于进一步学术讨论联络</small>
+                                </div>
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="anonymous" name="anonymous" value="anonymous">
+                                    <label class="form-check-label" for="anonymous">保持匿名</label>
+                                </div>
+                                <hr>
+                                <div class="form-group">
+                                    <label for="model_type">大模型类型</label>
+                                    <select class="form-control" id="model_type" name="model_type" required>
+                                <option value="1">文本</option>
+                                <option value="2">视觉</option>
+                                <option value="3">听觉</option>
+                                <option value="4">运动控制</option>
+                                <option value="5">多模态</option>
+                                <option value="6">代码</option>
+                            </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="model_name" class="form-label">大模型名称</label>
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" id="model_name" aria-describedby="model_name" name="model_name" maxlength="100" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="model_link" class="form-label">大模型链接github地址</label>
+                                    <textarea class="form-control" id="model_link" name="model_link" rows="2" cols="50" maxlength="400" required placeholder="请输入大模型测试链接"></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="user_question_text" class="form-label">大模型的方向与类别</label>
+                                    <textarea class="form-control" id="user_question_text" name="user_question_text" rows="2" cols="50" maxlength="2000" required placeholder="请输入大模型方向与类别"></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="model_answer_text" class="form-label">大模型的预期效果</label>
+                                    <textarea class="form-control" id="model_answer_text" name="model_answer_text" rows="2" cols="50" maxlength="5000" placeholder="请输入大模型的预期效果"></textarea>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">上传</span>
+                                    </div>
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="model_answer_file" aria-describedby="model_answer_file" name="model_answer_file">
+                                        <label class="custom-file-label" for="model_answer_file" data-browse="浏览">选择大模型输出截图</label>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="test_date" class="form-label">测试日期</label>
+
+                                    <input type="date" class="form-control" id="test_date" aria-describedby="test_date" name="test_date" lang="zh-CN" required>
+
+                                </div>
+                                <div id="expected_answer_container">
+                                    <div class="form-group">
+                                        <label for="issue_type">此输出结果的伦理安全问题类型</label>
+                                        <select class="form-control" id="issue_type" name="issue_type">
+                                    <option value="" selected>请选择伦理安全问题类型</option>
+                                    
+                                        <option value="1">虚假、误导和低质量信息</option>
+                                    
+                                        <option value="2">偏见、排他和歧视性信息</option>
+                                    
+                                        <option value="3">负面消极、自杀自残、损害身心健康</option>
+                                    
+                                        <option value="4">暴力血腥、仇恨极端、色情低俗</option>
+                                    
+                                        <option value="5">侵犯人格尊严、不友善</option>
+                                    
+                                        <option value="6">违背社会文化习俗和伦理道德规范</option>
+                                    
+                                        <option value="7">涉及政治军事等敏感话题的有害信息</option>
+                                    
+                                        <option value="8">侵害隐私、泄露敏感数据</option>
+                                    
+                                        <option value="9">侵害知识产权</option>
+                                    
+                                        <option value="10">引诱用户从事不良或违法活动</option>
+                                    
+                                        <option value="11">被用户恶意价值观诱导</option>
+                                    
+                                        <option value="12">被用于违法违规犯罪活动</option>
+                                    
+                                        <option value="13">脱离人类控制损害人类自主性</option>
+                                    
+                                        <option value="14">不负责任的高风险决策建议（医疗、财务、法律等）</option>
+                                    
+                                        <option value="15">其他问题</option>
+                                    
+                                </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="expected_answer_text" class="form-label">您认为的合理输出应该是什么？</label>
+                                        <textarea class="form-control" id="expected_answer_text" name="expected_answer_text" rows="2" cols="50" maxlength="2000" placeholder="请输入您认为的合理输出"></textarea>
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">上传</span>
+                                        </div>
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="expected_answer_file" aria-describedby="model_answer_file" name="expected_answer_file">
+                                            <label class="custom-file-label" for="expected_answer_file" data-browse="浏览">选择合理输出的文件</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="hidden" id="page_language" name="page_language" value="cn" required>
+
+                                <button type="submit" class="btn button-submit btn-block mt-5 button-navy" id="submit_button">
+                            <span class="spinner-border spinner-border-sm d-none mr-2" role="status" id="submit_button_spinner"></span>
+                            <span id="submit_button_text">提交</span>
+                        </button>
+                                <div class="alert alert-success d-none mt-4" role="alert" id="alert_success">
+                                    谢谢您的提交。我们的管理员确认后会尽快显示您的案例。现在您可以提交下一个案例。
+                                </div>
+                                <div class="alert alert-danger d-none mt-4" role="alert" id="alert_not_success">
+                                    您的提交未能成功，我们会检查这个问题。您可以尝试提交其他案例。
+                                </div>
+                            </form>
+                        </div>
+                        <div id="result"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <script>
+        </script>
+
+
+    </div>
+
+    <div class="container-fluid footer-copyright-sandbox">
+        <div class="container footer-copyright-container-sandbox">
+
+            <div class="copyright-icon">©</div>
+            <div>
+                <div class="copyright-text">
+                    <a href="https://long-term-ai.center/" target="_blank">
+
+                        <div class="copyright-text">远期人工智能研究中心</div>
+
+                    </a>
+                </div>
+                <div class="copyright-text">
+                    <a href="javascript: void(0)">
+
+                        <div class="copyright-text">善智书院</div>
+
+                    </a>
+                </div>
+                <div class="copyright-text">
+                    <a href="https://ai-ethics-and-governance.institute" target="_blank">
+
+                        <div class="copyright-text">中国科学院自动化研究所 人工智能伦理与治理研究中心</div>
+
+                    </a>
+                </div>
+                <div class="copyright-text">2018-
+                    <script>
+                        document.write(new Date().getFullYear().toString())
+                    </script> 保留所有权利</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="static/js/popper.min.js"></script>
+    <script src="static/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+
+    <script>
+        // show upload file name
+        document.getElementById("model_answer_file").addEventListener('change', function(e) {
+            let fileName = $(this).val();
+            fileName = fileName.replace("C:\\fakepath\\", "");
+            if (fileName !== undefined || fileName !== "") {
+                $(this).next('.custom-file-label').html(fileName);
+            }
+        })
+        document.getElementById("expected_answer_file").addEventListener('change', function(e) {
+            let fileName = $(this).val();
+            fileName = fileName.replace("C:\\fakepath\\", "");
+            if (fileName !== undefined || fileName !== "") {
+                $(this).next('.custom-file-label').html(fileName);
+            }
+        })
+    </script>
+    <!-- toggle thumbs -->
+    <script>
+        const language = "cn";
+        toggle_expected_output_display()
+
+        function toggle_expected_output_display() {
+            if ($("#unlike-btn").hasClass("active")) {
+                $("#expected_answer_container").css("display", "block");
+            } else {
+                $("#expected_answer_container").css("display", "none");
+            }
+        }
+        toggle_like_status_hint()
+
+        function toggle_like_status_hint() {
+            if ($("#unlike-btn").hasClass("active")) {
+                $("#like_status_hint").css("display", "block");
+                if (language == "en") {
+                    $("#like_status_hint").text("You believe the answer is problematic in terms of ethics and safety");
+                } else {
+                    $("#like_status_hint").text("您认为这个回答伦理安全方面存在问题");
+                }
+            } else if ($("#like-btn").hasClass("active")) {
+                $("#like_status_hint").css("display", "block");
+                if (language == "en") {
+                    $("#like_status_hint").text("You believe the answer makes sense in terms of ethics and safety");
+                } else {
+                    $("#like_status_hint").text("您认为这个回答伦理安全方面合理");
+                }
+            } else {
+                $("#like_status_hint").css("display", "none");
+                $("#like_status_hint").text("");
+            }
+        }
+        $(document).ready(function() {
+            // When the thumb up button is clicked, toggle the active class and update the input value
+            $("#like-btn").click(function() {
+                $(this).toggleClass("active");
+                $("#unlike-btn").removeClass("active");
+                $("#like_status").val($(this).hasClass("active") ? "liked" : "");
+                toggle_expected_output_display()
+                toggle_like_status_hint()
+            });
+
+            // When the thumb down button is clicked, toggle the active class and update the input value
+            $("#unlike-btn").click(function() {
+                $(this).toggleClass("active");
+                $("#like-btn").removeClass("active");
+                $("#like_status").val($(this).hasClass("active") ? "unliked" : "");
+                toggle_expected_output_display()
+                toggle_like_status_hint()
+            });
+
+            // When the form is submitted, log the like status to the console
+
+        });
+    </script>
+
+    <script>
+        const link_textarea = document.getElementById("link");
+
+        const alert_success = document.getElementById("alert_success");
+        const alert_not_success = document.getElementById("alert_not_success");
+        const submit_button = document.getElementById("submit_button");
+        const submit_button_spinner = document.getElementById("submit_button_spinner");
+        const submit_button_text = document.getElementById("submit_button_text");
+
+        function hide_all_alerts() {
+            alert_success.classList.add("d-none");
+            alert_not_success.classList.add("d-none");
+        }
+
+        function toggle_alert_if_success(if_response_success) {
+            if (if_response_success === "success") {
+                alert_success.classList.remove("d-none");
+                alert_not_success.classList.add("d-none");
+            } else {
+                alert_success.classList.add("d-none");
+                alert_not_success.classList.remove("d-none");
+            }
+        }
+
+        let likeValue = ''
+        const radioButtons = document.querySelectorAll('input[name="like"]')
+
+        radioButtons.forEach((radio) => {
+            radio.addEventListener('click', (e) => {
+                if (e.target.value === likeValue) {
+                    e.target.checked = false
+                    likeValue = ''
+                } else {
+                    likeValue = e.target.value
+                }
+            })
+        })
+    </script>
+    <script>
+        $("#form_test").submit(function(event) {
+
+            // Stop form from submitting normally
+            event.preventDefault();
+            if (document.getElementById("like_status").value === "") {
+
+                alert(language === "en" ? "Please select 'How do you think about the output result?'" : "请选择“您认为输出结果怎么样？”")
+            } else if (document.getElementById("like_status").value === "unliked" && document.getElementById("issue_type").value === "") {
+                alert(language === "en" ? "Please select 'Type of ethical and safety issue for the output result'" : "请选择“此输出结果的伦理安全问题类型”")
+            } else {
+                hide_all_alerts();
+
+                submit_button_spinner.classList.remove("d-none");
+                submit_button_text.innerText = language === "en" ? "Submitting..." : "正在提交...";
+                submit_button.disabled = true;
+
+                var form_data = new FormData($('#form_test')[0]);
+
+                $.ajax({
+                    url: '/large-ai-investigator/submit',
+                    type: 'POST',
+                    data: form_data,
+                    contentType: false,
+                    cache: false,
+                    processData: false,
+                    success: function(response) {
+
+                        toggle_alert_if_success(response["submission_result"]);
+                        submit_button_spinner.classList.add("d-none");
+                        submit_button_text.innerText = language === "en" ? "Submit" : "提交";
+                        submit_button.disabled = false;
+                        document.getElementById("form_test").reset();
+                    },
+                    error: function(xhr, status, error) {
+
+                        toggle_alert_if_success("fail");
+                        submit_button_spinner.classList.add("d-none");
+                        submit_button_text.innerText = language === "en" ? "Submit" : "提交";
+                        submit_button.disabled = false;
+                        document.getElementById("form_test").reset();
+                    }
+                });
+            }
+
+
+        });
+    </script>
+
+
+
+
+</body>
+
+</html>
